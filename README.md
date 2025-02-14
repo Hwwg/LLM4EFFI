@@ -8,7 +8,7 @@
 python -m pip install evalplus
 ```
 
-## Generating code
+## Generating Code
 
 1. Setting `api_key` and `base_url` in gpt/gpt_reply.py
 
