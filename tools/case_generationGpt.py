@@ -38,18 +38,18 @@ __accepted = __check(__input, __answer, __output)
     """
     def __init__(self,problems):
         self.lock = threading.Lock()  # 添加锁
-        with open("../cache/0918/self_codegen_deepseek-coder_0914_3_extract_case_turn0_all_modified.json", "r") as f:
-            content = f.read()
-            data = json.loads(content)  # 解析 JSON 数据
-        self.test_case = data
+        # with open("../cache/0918/self_codegen_deepseek-coder_0914_3_extract_case_turn0_all_modified.json", "r") as f:
+        #     content = f.read()
+        #     data = json.loads(content)  # 解析 JSON 数据
+        # self.test_case = data
 
-        with open("../cache/backup/self_codegen_deepseek_coder_0923_0_votingcase_turn0_all_failed.json", "r") as f:
-            content = f.read()
-            # print(content)
-            data1 = json.loads(content)  # 解析 JSON 数据
-        self.untrust_test_case = data1
-        self.problems = pd.read_csv(problems)
-        self.evalplus_case = self.generate_case_from_evalpuls()
+        # with open("../cache/backup/self_codegen_deepseek_coder_0923_0_votingcase_turn0_all_failed.json", "r") as f:
+        #     content = f.read()
+        #     # print(content)
+        #     data1 = json.loads(content)  # 解析 JSON 数据
+        # self.untrust_test_case = data1
+        # self.problems = pd.read_csv(problems)
+        # self.evalplus_case = self.generate_case_from_evalpuls()
         # testcase = data[i]['ini_test_case']
         # self.tolerence_sec = tolerence_sec
         # self.timeout_factor = timeout_factor
